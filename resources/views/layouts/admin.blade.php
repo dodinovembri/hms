@@ -32,6 +32,7 @@
   <body class="fixed-header dashboard  windows desktop pace-done sidebar-visible menu-pin">
 
 
+    @include('template.sidebar')
     @yield('content')
 
     <!-- END OVERLAY -->
