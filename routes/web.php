@@ -17,3 +17,4 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/main_departement', 'HomeController@main_departement')->name('main_departement');

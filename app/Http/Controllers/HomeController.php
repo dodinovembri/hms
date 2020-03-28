@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function main_departement()
+    {
+        return view('departement.index');
+    }
 }
