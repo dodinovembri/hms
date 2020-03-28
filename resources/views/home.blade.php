@@ -55,7 +55,7 @@
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
               <li class="">
-                <a href="main_departement.html">Main Departement</a>
+                <a href="{{ route('main_departement') }}">Main Departement</a>
                 <!-- <span class="icon-thumbnail">MD</span> -->
               </li>
               <li class="">
