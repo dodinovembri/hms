@@ -1,80 +1,67 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Pages - Admin Dashboard UI Kit - Lock Screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" href="pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="{{ asset('tmp/assets/plugins/pace/pace-theme-flash.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('tmp/assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('tmp/assets/plugins/font-awesome/css/font-awesome.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('tmp/assets/plugins/jquery-scrollbar/jquery.scrollbar.css') }}" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{ asset('tmp/assets/plugins/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{ asset('tmp/assets/plugins/switchery/css/switchery.min.css') }}" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{ asset('tmp/pages/css/pages-icons.css') }}" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="{{ asset('tmp/pages/css/pages.css') }}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+    window.onload = function()
+    {
+      // fix for windows 8
+      if (navigator.appVersion.indexOf("Windows NT 6.2") != -1)
+        document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="{{ asset('tmp/pages/css/windows.chrome.fix.css') }}" />'
+    }
+    </script>pages/css/windows.chrome.fix.css
+  </head>
+  <body class="fixed-header ">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    @yield('content')
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
-</body>
+    <!-- END OVERLAY -->
+    <!-- BEGIN VENDOR JS -->
+    <script src="{{ asset('tmp/assets/plugins/pace/pace.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/jquery/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/modernizr.custom.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/jquery-ui/jquery-ui.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/tether/js/tether.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/jquery/jquery-easy.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/jquery-unveil/jquery.unveil.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/jquery-ios-list/jquery.ioslist.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/jquery-actual/jquery.actual.min.js') }}"></script>
+    <script src="{{ asset('tmp/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('tmp/assets/plugins/select2/js/select2.full.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('tmp/assets/plugins/classie/classie.js') }}"></script>
+    <script src="{{ asset('tmp/assets/plugins/switchery/js/switchery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('tmp/assets/plugins/jquery-validation/js/jquery.validate.min.js') }}" type="text/javascript"></script>
+    <!-- END VENDOR JS -->
+    <script src="{{ asset('tmp/pages/js/pages.min.js') }}"></script>
+    <script>
+    $(function()
+    {
+      $('#form-login').validate()
+    })
+    </script>
+  </body>
 </html>
