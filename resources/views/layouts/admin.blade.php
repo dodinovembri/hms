@@ -29,7 +29,7 @@
     <link href="{{ asset('tmp/pages/css/pages-icons.css') }}" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="{{ asset('tmp/pages/css/pages.css') }}" rel="stylesheet" type="text/css" />
   </head>
-  <body class="fixed-header dashboard">
+  <body class="fixed-header dashboard  windows desktop pace-done sidebar-visible menu-pin">
 
 
     @yield('content')

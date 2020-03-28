@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 
 @section('content')
-    <!-- BEGIN SIDEBPANEL-->
-    <nav class="page-sidebar" data-pages="sidebar">
+    <nav class="page-sidebar" data-pages="sidebar" style="">
+    <!-- <nav class="page-sidebar" data-pages="sidebar" style="transform: translate(210px);"> -->
       <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
       <div class="sidebar-overlay-slide from-top" id="appMenu">
         <div class="row">
@@ -49,12 +49,13 @@
             <!-- <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span> -->
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Departement</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Departement</span>
+            
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
               <li class="">
-                <a href="{{ route('main_departement') }}">Main Departement</a>
+                <a href="main_departement.html">Main Departement</a>
                 <!-- <span class="icon-thumbnail">MD</span> -->
               </li>
               <li class="">
@@ -68,7 +69,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Doctor</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Doctor</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -91,7 +92,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Patient</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Patient</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -118,7 +119,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Schedule</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Schedule</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -137,7 +138,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Appointment</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Appointment</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -176,7 +177,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Pharmacy</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Pharmacy</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -199,7 +200,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Prescrption</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Prescrption</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -222,7 +223,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Account Manager</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Account Manager</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -255,12 +256,12 @@
                 <!-- <span class="icon-thumbnail">AD</span> -->
               </li>                            
               <li>
-                <a href="javascript:;"><span class="title">Account Report</span>
+                <a href="javascript:;" style="width:100%"><span class="title">Account Report</span>
                 <span class="arrow"></span></a>
                 <!-- <span class="icon-thumbnail">AR</span> -->
                 <ul class="sub-menu">
                   <li>
-                    <a href="javascript:;">Voucher Report</a>
+                    <a href="javascript:;" style="width:100%">Voucher Report</a>
                     <!-- <span class="icon-thumbnail">Sm</span> -->
                   </li>
                   <li>
@@ -296,7 +297,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Insurance</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Insurance</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -319,7 +320,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Billing</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Billing</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -366,7 +367,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Human Resources</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Human Resources</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -381,7 +382,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Bed Manager</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Bed Manager</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -420,7 +421,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Medications and Visits</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Medications and Visits</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -455,7 +456,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Notice Board</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Notice Board</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -470,7 +471,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Case Manager</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Case Manager</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -485,7 +486,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Hospital Activity</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Hospital Activity</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -530,7 +531,7 @@
             <!-- <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span> -->
           </li>          
           <li>
-            <a href="javascript:;"><span class="title">Setting</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Setting</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -549,7 +550,7 @@
             </ul>
           </li>    
           <li>
-            <a href="javascript:;"><span class="title">SMS</span>
+            <a href="javascript:;" style="width:100%"><span class="title">SMS</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -584,7 +585,7 @@
             </ul>
           </li>           
           <li>
-            <a href="javascript:;"><span class="title">Messages</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Messages</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -603,7 +604,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Mail</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Mail</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -618,7 +619,7 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:;"><span class="title">Website</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Website</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -677,7 +678,7 @@
             </ul>
           </li>  
           <li>
-            <a href="javascript:;"><span class="title">Permission</span>
+            <a href="javascript:;" style="width:100%"><span class="title">Permission</span>
             <span class=" arrow"></span></a>
             <!-- <span class="icon-thumbnail"><i class="pg-calender"></i></span> -->
             <ul class="sub-menu">
@@ -718,7 +719,7 @@
           <ul class="hidden-md-down notification-list no-margin hidden-sm-down b-grey b-l b-r no-style p-l-30 p-r-20">
             <li class="p-r-10 inline">
               <div class="dropdown">
-                <a href="javascript:;" id="notification-center" class="header-icon pg pg-world" data-toggle="dropdown">
+                <a href="javascript:;" style="width:100%" id="notification-center" class="header-icon pg pg-world" data-toggle="dropdown">
                   <span class="bubble"></span>
                 </a>
                 <!-- START Notification Dropdown -->
@@ -2649,7 +2650,7 @@
               <div class="navbar navbar-default navbar-sm">
                 <div class="navbar-inner">
                   <!-- BEGIN Header Controler !-->
-                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                  <a href="javascript:;" style="width:100%" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                     <i class="pg-more"></i>
                   </a>
                   <!-- END Header Controler !-->
@@ -2677,7 +2678,7 @@
                     <!-- BEGIN List Group Item!-->
                     <li class="alert-list">
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
-                      <a href="javascript:;" class="align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                      <a href="javascript:;" style="width:100%" class="align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
                           <span class="text-warning fs-10"><i class="fa fa-circle"></i></span>
                         </p>
@@ -2723,7 +2724,7 @@
                     <!-- BEGIN List Group Item!-->
                     <li class="alert-list">
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
-                      <a href="javascript:;" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                      <a href="javascript:;" style="width:100%" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
                           <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
                         </p>
@@ -2738,7 +2739,7 @@
                     <!-- BEGIN List Group Item!-->
                     <li class="alert-list">
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
-                      <a href="javascript:;" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                      <a href="javascript:;" style="width:100%" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
                           <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
                         </p>
@@ -2790,7 +2791,7 @@
               <div class="navbar navbar-default">
                 <div class="navbar-inner">
                   <!-- BEGIN Header Controler !-->
-                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                  <a href="javascript:;" style="width:100%" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                     <i class="pg-plus"></i>
                   </a>
                   <!-- END Header Controler !-->
@@ -3421,7 +3422,7 @@
               <!-- BEGIN Header  !-->
               <div class="navbar navbar-default">
                 <div class="navbar-inner">
-                  <a href="javascript:;" class="link text-master inline action p-l-10 p-r-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                  <a href="javascript:;" style="width:100%" class="link text-master inline action p-l-10 p-r-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                     <i class="pg-arrow_left"></i>
                   </a>
                   <div class="view-heading">
