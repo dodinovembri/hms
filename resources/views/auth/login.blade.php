@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="login-wrapper ">
   <!-- START Login Background Pic Wrapper-->
   <div class="bg-pic">
@@ -30,7 +29,7 @@
         <div class="form-group form-group-default">
           <label>Login</label>
           <div class="controls">
-            <input type="text" name="username" placeholder="User Name" class="form-control" required>
+            <input type="text" name="email" placeholder="User Name" class="form-control" required>
           </div>
         </div>
         <!-- END Form Control-->

@@ -28,9 +28,9 @@
     {
       // fix for windows 8
       if (navigator.appVersion.indexOf("Windows NT 6.2") != -1)
-        document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="{{ asset('tmp/pages/css/windows.chrome.fix.css') }}" />'
+        document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="{{asset('"tmp/pages/css/windows.chrome.fix.css"')}}" />'
     }
-    </script>pages/css/windows.chrome.fix.css
+    </script>
   </head>
   <body class="fixed-header ">
 
@@ -56,7 +56,7 @@
     <script src="{{ asset('tmp/assets/plugins/switchery/js/switchery.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('tmp/assets/plugins/jquery-validation/js/jquery.validate.min.js') }}" type="text/javascript"></script>
     <!-- END VENDOR JS -->
-    <script src="{{ asset('tmp/pages/js/pages.min.js') }}"></script>
+    <script src="{{ asset('pages/js/pages.min.js') }}"></script>
     <script>
     $(function()
     {
