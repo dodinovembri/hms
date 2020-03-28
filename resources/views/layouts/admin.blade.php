@@ -34,6 +34,7 @@
 
     @include('template.sidebar')
     @yield('content')
+    
 
     <!-- END OVERLAY -->
     <!-- BEGIN VENDOR JS -->

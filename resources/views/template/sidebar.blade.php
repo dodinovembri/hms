@@ -4,7 +4,7 @@
   <div class="sidebar-overlay-slide from-top" id="appMenu">
     <div class="row">
       <div class="col-xs-6 no-padding">
-        <a href="#" class="p-l-40"><img src="assets/img/demo/social_app.svg" alt="socail">
+        <a href="#" class="p-l-40"><img src="{{ asset('tmp/assets/img/demo/social_app.svg') }}" alt="socail">
         </a>
       </div>
       <div class="col-xs-6 no-padding">
@@ -26,13 +26,7 @@
   <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
   <!-- BEGIN SIDEBAR MENU HEADER-->
   <div class="sidebar-header">
-    <img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
-    <div class="sidebar-header-controls">
-      <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20 hidden-md-down" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
-      </button>
-      <button type="button" class="btn btn-link hidden-md-down" data-toggle-pin="sidebar"><i class="fa fs-12"></i>
-      </button>
-    </div>
+    <img src="{{ asset('tmp/assets/img/logo_white.png') }}" alt="logo" class="brand" data-src="{{ asset('tmp/assets/img/logo_white.png') }}" data-src-retina="{{ asset('tmp/assets/img/logo_white_2x.png') }}" width="78" height="22">
   </div>
   <!-- END SIDEBAR MENU HEADER-->
   <!-- START SIDEBAR MENU -->
@@ -40,7 +34,7 @@
     <!-- BEGIN SIDEBAR MENU ITEMS-->
     <ul class="menu-items">
       <li class="m-t-30 ">
-        <a href="admin.html" class="detailed">
+        <a href="{{ route('home') }}" class="detailed">
           <span class="title">Dashboard</span>              
         </a>
         <!-- <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span> -->
