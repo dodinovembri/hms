@@ -24,12 +24,18 @@
       <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
       <p class="p-t-35">Sign into your pages account</p>
       <!-- START Login Form -->
-      <form id="form-login" class="p-t-15" role="form" action="index.html">
+      <form id="form-login" method="POST" class="p-t-15" role="form" action="{{ route('login') }}">
+        @csrf
         <!-- START Form Control-->
         <div class="form-group form-group-default">
           <label>Login</label>
           <div class="controls">
             <input type="text" name="email" placeholder="User Name" class="form-control" required>
+            @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
           </div>
         </div>
         <!-- END Form Control-->
@@ -38,6 +44,11 @@
           <label>Password</label>
           <div class="controls">
             <input type="password" class="form-control" name="password" placeholder="Credentials" required>
+            @error('password')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror            
           </div>
         </div>
         <!-- START Form Control-->
